@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:PicSimulator" d:DataContext="{d:DesignInstance Type=local:PicViewModel}"
         xmlns:my="clr-namespace:CustomControl"
         mc:Ignorable="d"
+        Style="{StaticResource MaterialDesignWindow}"
         Title="PicSimulator" Height="800" Width="1200">
     <Window.Resources>
         <local:BooleanToBrushConverter x:Key="BooleanToBrushConverter"/>
@@ -51,10 +52,10 @@
         <!--Gesamt Grid-->
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="250px"/>
+                <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="170*"/>
