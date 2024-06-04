@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PicSimulator" d:DataContext="{d:DesignInstance Type=local:PicViewModel}"
         xmlns:my="clr-namespace:CustomControl"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         Style="{StaticResource MaterialDesignWindow}"
         Title="PicSimulator" Height="800" Width="1200">
@@ -42,7 +43,7 @@
                 <TextBlock>Datei:</TextBlock>
             </StatusBarItem>
             <StatusBarItem>
-                <TextBlock Text="{Binding DateiPfad}" Width="1000"/>
+                <TextBlock Text="{Binding DateiPfad}" Width="Auto"/>
             </StatusBarItem>
             <StatusBarItem FlowDirection="RightToLeft">
                 <TextBlock>Die 2 Hellsten Leuchten</TextBlock>
@@ -64,6 +65,11 @@
                 <RowDefinition Height="307*"/>
                 <RowDefinition Height="30px"/>
             </Grid.RowDefinitions>
+
+            <DockPanel Grid.Column="2">
+            </DockPanel>
+            
+            
             <!--Spezial Register-->
             <!--<DataGrid d:ItemsSource="{d:SampleData ItemCount=16}" Grid.RowSpan="2" Margin="0,0,0,0"/>-->
             <StackPanel Grid.Row="3" Margin="0,20,0,0" Grid.RowSpan="2">
